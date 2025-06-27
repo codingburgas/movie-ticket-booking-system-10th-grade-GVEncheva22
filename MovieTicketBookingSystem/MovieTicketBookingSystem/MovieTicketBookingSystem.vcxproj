@@ -131,6 +131,7 @@
     <ClCompile Include="login.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
+    <ClCompile Include="movie.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="signUp.cpp" />
     <ClCompile Include="startingScreen.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="login.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="mainMenu.h" />
+    <ClInclude Include="movie.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="signUp.h" />
     <ClInclude Include="startingScreen.h" />
