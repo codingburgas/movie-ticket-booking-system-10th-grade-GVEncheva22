@@ -1,47 +1,56 @@
+#include "signUp.h"
 #include <iostream>
 #include <fstream>
-#include <string>
 using namespace std;
 
 bool userExists(const string& username)
 {
-    ifstream file("users/" + username + ".txt");
-    return file.good();
+    ifstream file("userData.txt");
+    string fileUsername, filePassword;
+    if (!file.is_open())
+        return false;
+
+    while (file >> fileUsername >> filePassword)
+    {
+        if (fileUsername == username)
+            return true;
+    }
+    return false;
 }
 
 void saveUser(const string& username, const string& password)
 {
-    ofstream file("users/" + username + ".txt");
+    ofstream file("userData.txt", ios::app);
     if (file.is_open())
     {
-        file << password << endl;
+        file << username << " " << password << endl;
         file.close();
-        cout << "User saved successfully!" << endl;
     }
     else
     {
-        cout << "Error saving user data!" << endl;
+        cout << "Error opening file for saving user!" << endl;
     }
 }
 
 void displaySignUp()
 {
     string username, password;
-    cout << "Enter username: ";
+
+    cout << "Enter new username: ";
     cin >> username;
 
     if (userExists(username))
     {
-        cout << "This username already exists! Please try another one." << endl;
+        cout << "Username already taken! Please try another." << endl;
         system("pause");
         return;
     }
 
-    cout << "Enter password: ";
+    cout << "Enter new password: ";
     cin >> password;
 
     saveUser(username, password);
 
-    cout << "Sign up successful! You can now log in." << endl;
+    cout << "Registration successful!" << endl;
     system("pause");
 }

@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
-using namespace std;
 
-bool userExists(const string& username);
-void saveUser(const string& username, const string& password);
+bool userExists(const std::string& username);
+void saveUser(const std::string& username, const std::string& password);
 void displaySignUp();
