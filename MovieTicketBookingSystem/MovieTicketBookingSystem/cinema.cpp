@@ -1,12 +1,6 @@
-#include "cinema.h"
+#include "Cinema.h"
 #include <iostream>
 using namespace std;
-
-Cinema::Cinema() {
-    name = "";
-    city = "";
-    hallCount = 0;
-}
 
 Cinema::Cinema(string name, string city) {
     this->name = name;
@@ -14,9 +8,9 @@ Cinema::Cinema(string name, string city) {
     hallCount = 0;
 }
 
-bool Cinema::addHall(const Hall& hall) {
+bool Cinema::addHall(int hallNumber, int totalSeats) {
     if (hallCount < maxHalls) {
-        halls[hallCount] = hall;
+        halls[hallCount] = Hall(hallNumber, totalSeats);  
         hallCount++;
         return true;
     }

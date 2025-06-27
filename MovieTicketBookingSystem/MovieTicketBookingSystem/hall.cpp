@@ -2,6 +2,12 @@
 #include <iostream>
 using namespace std;
 
+Hall::Hall() {
+    hallNumber = 0;
+    totalSeats = 0;
+    seats = nullptr;
+}
+
 Hall::Hall(int hallNumber, int totalSeats) {
     this->hallNumber = hallNumber;
     this->totalSeats = totalSeats;

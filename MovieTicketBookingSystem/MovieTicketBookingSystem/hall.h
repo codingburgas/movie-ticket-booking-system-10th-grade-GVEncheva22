@@ -7,6 +7,7 @@ public:
     int totalSeats;
     bool* seats;
 
+    Hall();  
     Hall(int hallNumber, int totalSeats);
 
     void displaySeats();
