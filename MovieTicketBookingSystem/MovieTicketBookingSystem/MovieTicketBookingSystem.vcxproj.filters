@@ -42,6 +42,15 @@
     <ClCompile Include="movie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cinema.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="show.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -69,6 +78,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="movie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cinema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="show.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
