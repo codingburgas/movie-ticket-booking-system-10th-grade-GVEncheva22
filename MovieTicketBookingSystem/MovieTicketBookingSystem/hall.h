@@ -11,5 +11,6 @@ public:
 
     void displaySeats();
     bool bookSeat(int seatNumber);
+    void displayHallInfo() const;
 };
 
