@@ -2,7 +2,7 @@
 
 void centerText(const string& text)
 {
-    int width = 120; 
+    int width = 120;
     int leftPadding = (width - text.length()) / 2;
     if (leftPadding < 0) {
         leftPadding = 0;

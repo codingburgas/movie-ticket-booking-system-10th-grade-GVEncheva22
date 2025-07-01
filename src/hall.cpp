@@ -37,8 +37,3 @@ bool Hall::bookSeat(int seatNumber) {
     }
     return false;
 }
-
-void Hall::displayHallInfo() const {
-    cout << "Hall Number: " << hallNumber << endl;
-    cout << "Total Seats: " << totalSeats << endl;
-}

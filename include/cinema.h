@@ -7,8 +7,8 @@ class Cinema {
 private:
     string name;
     string city;
-    static const int maxHalls = 5;  
-    Hall halls[maxHalls];       
+    static const int maxHalls = 5;
+    Hall halls[maxHalls];
     int hallCount;
 
 public:

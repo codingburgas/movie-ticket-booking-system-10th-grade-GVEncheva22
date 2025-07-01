@@ -15,6 +15,6 @@ void viewProjections() {
 
     cout << "Available movie projections:\n";
     for (int i = 0; i < showCount; i++) {
-        cout << i + 1 << ". " << shows[i].movieTitle << " | Time: " << shows[i].showTime  << " | Hall: " << shows[i].hallNumber << endl;
+        cout << i + 1 << ". " << shows[i].movieTitle << " | Time: " << shows[i].showTime << " | Hall: " << shows[i].hallNumber << endl;
     }
 }

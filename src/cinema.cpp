@@ -10,7 +10,7 @@ Cinema::Cinema(string name, string city) {
 
 bool Cinema::addHall(int hallNumber, int totalSeats) {
     if (hallCount < maxHalls) {
-        halls[hallCount] = Hall(hallNumber, totalSeats);  
+        halls[hallCount] = Hall(hallNumber, totalSeats);
         hallCount++;
         return true;
     }

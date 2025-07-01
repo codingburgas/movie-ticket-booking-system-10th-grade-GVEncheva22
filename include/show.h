@@ -7,7 +7,7 @@ class Show {
 private:
     string movieTitle;
     string showTime;
-    Hall* hall; 
+    Hall* hall;
 
 public:
     Show(string title, string time, Hall* hall);

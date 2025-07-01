@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 using namespace std;
 
 class Hall {
@@ -7,11 +8,10 @@ public:
     int totalSeats;
     bool* seats;
 
-    Hall();  
+    Hall();
     Hall(int hallNumber, int totalSeats);
 
     void displaySeats();
     bool bookSeat(int seatNumber);
     void displayHallInfo() const;
 };
-

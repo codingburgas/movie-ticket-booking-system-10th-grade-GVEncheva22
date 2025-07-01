@@ -25,7 +25,7 @@ void addMovie() {
     cout << "Enter movie genre: ";
     getline(cin, genre);
 
-    cout << "Enter movie release date (e.g. 2023-06-01): ";
+    cout << "Enter movie release date (e.g. 2023-06-01) ";
     getline(cin, releaseDate);
 
     movies[movieCount] = Movie(title, language, genre, releaseDate);
@@ -86,23 +86,22 @@ int main() {
         cin >> choice;
 
         switch (choice) {
-            case 1:
-                addMovie();
-                break;
-            case 2:
-                displayMovies();
-                break;
-            case 3:
-                deleteMovie();
-                break;
-            case 4:
-                cout << "Exiting admin panel." << endl;
-                break;
-            default:
-                cout << "Invalid choice! Try again." << endl;
+        case 1:
+            addMovie();
+            break;
+        case 2:
+            displayMovies();
+            break;
+        case 3:
+            deleteMovie();
+            break;
+        case 4:
+            cout << "Exiting admin panel." << endl;
+            break;
+        default:
+            cout << "Invalid choice! Try again." << endl;
         }
     } while (choice != 4);
 
     return 0;
 }
-

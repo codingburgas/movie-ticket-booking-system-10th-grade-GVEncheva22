@@ -18,6 +18,36 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\authScreens.h" />
+    <ClInclude Include="..\..\include\admin.h" />
+    <ClInclude Include="..\..\include\cinema.h" />
+    <ClInclude Include="..\..\include\hall.h" />
+    <ClInclude Include="..\..\include\main.h" />
+    <ClInclude Include="..\..\include\movie.h" />
+    <ClInclude Include="..\..\include\pch.h" />
+    <ClInclude Include="..\..\include\show.h" />
+    <ClInclude Include="..\..\include\signUp.h" />
+    <ClInclude Include="..\..\include\startingScreen.h" />
+    <ClInclude Include="..\..\include\user.h" />
+    <ClInclude Include="..\..\login.h" />
+    <ClInclude Include="..\..\mainMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\admin.cpp" />
+    <ClCompile Include="..\..\src\authScreens.cpp" />
+    <ClCompile Include="..\..\src\cinema.cpp" />
+    <ClCompile Include="..\..\src\hall.cpp" />
+    <ClCompile Include="..\..\src\login.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\mainMenu.cpp" />
+    <ClCompile Include="..\..\src\movie.cpp" />
+    <ClCompile Include="..\..\src\pch.cpp" />
+    <ClCompile Include="..\..\src\show.cpp" />
+    <ClCompile Include="..\..\src\signUp.cpp" />
+    <ClCompile Include="..\..\src\startingScreen.cpp" />
+    <ClCompile Include="..\..\src\user.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,36 +156,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="admin.cpp" />
-    <ClCompile Include="authScreens.cpp" />
-    <ClCompile Include="cinema.cpp" />
-    <ClCompile Include="hall.cpp" />
-    <ClCompile Include="login.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mainMenu.cpp" />
-    <ClCompile Include="movie.cpp" />
-    <ClCompile Include="pch.cpp" />
-    <ClCompile Include="show.cpp" />
-    <ClCompile Include="signUp.cpp" />
-    <ClCompile Include="startingScreen.cpp" />
-    <ClCompile Include="user.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="admin.h" />
-    <ClInclude Include="authScreens.h" />
-    <ClInclude Include="cinema.h" />
-    <ClInclude Include="hall.h" />
-    <ClInclude Include="login.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="mainMenu.h" />
-    <ClInclude Include="movie.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="show.h" />
-    <ClInclude Include="signUp.h" />
-    <ClInclude Include="startingScreen.h" />
-    <ClInclude Include="user.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

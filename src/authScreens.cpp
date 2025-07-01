@@ -5,7 +5,7 @@
 using namespace std;
 
 void clearScreen() {
-    system("cls"); 
+    system("cls");
 }
 
 void displaySignUp() {
