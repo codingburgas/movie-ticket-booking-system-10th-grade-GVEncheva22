@@ -1,6 +1,6 @@
-#include "authScreens.h"
-#include "signUp.h"
-#include "login.h"
+#include "../include/authScreens.h"
+#include "../include/signUp.h"
+#include "../include/login.h"
 #include <iostream>
 using namespace std;
 

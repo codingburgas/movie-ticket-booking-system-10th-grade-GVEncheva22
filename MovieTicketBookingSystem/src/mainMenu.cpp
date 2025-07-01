@@ -1,4 +1,4 @@
-#include "mainMenu.h"
+#include "../include/mainMenu.h"
 #include <iostream>
 using namespace std;
 

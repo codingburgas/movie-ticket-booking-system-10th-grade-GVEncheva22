@@ -1,5 +1,5 @@
-#include "startingScreen.h"
-#include "pch.h"
+#include "../include/startingScreen.h"
+#include "../include/pch.h"
 #include <iostream>
 #include <string>
 using namespace std;

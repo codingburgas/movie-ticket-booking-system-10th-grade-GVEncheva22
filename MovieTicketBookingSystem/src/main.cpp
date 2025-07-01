@@ -1,4 +1,4 @@
-#include "startingScreen.h"
+#include "../include/startingScreen.h"
 #include <iostream>
 
 int main()
