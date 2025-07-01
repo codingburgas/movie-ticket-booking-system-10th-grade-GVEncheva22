@@ -1,5 +1,5 @@
 #pragma once
-class admin
-{
-};
+
+void addMovie();
+void displayMovies();
 
