@@ -47,6 +47,32 @@ void displayMovies() {
     }
 }
 
+void deleteMovie() {
+    if (movieCount == 0) {
+        cout << "No movies to delete." << endl;
+        return;
+    }
+
+    displayMovies();
+
+    cout << "Enter the movie number to delete: ";
+    int index;
+    cin >> index;
+    index--;
+
+    if (index < 0 || index >= movieCount) {
+        cout << "Invalid movie number." << endl;
+        return;
+    }
+
+    for (int i = index; i < movieCount - 1; i++) {
+        movies[i] = movies[i + 1];
+    }
+    movieCount--;
+
+    cout << "Movie deleted successfully!" << endl;
+}
+
 int main() {
     int choice;
 
@@ -54,7 +80,8 @@ int main() {
         cout << "\nAdmin Menu:\n";
         cout << "1. Add movie\n";
         cout << "2. Display movies\n";
-        cout << "3. Exit\n";
+        cout << "3. Delete movie\n";
+        cout << "4. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -66,12 +93,16 @@ int main() {
                 displayMovies();
                 break;
             case 3:
+                deleteMovie();
+                break;
+            case 4:
                 cout << "Exiting admin panel." << endl;
                 break;
             default:
                 cout << "Invalid choice! Try again." << endl;
         }
-    } while (choice != 3);
+    } while (choice != 4);
 
     return 0;
 }
+

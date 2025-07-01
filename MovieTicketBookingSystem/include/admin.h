@@ -2,4 +2,4 @@
 
 void addMovie();
 void displayMovies();
-
+void deleteMovie();
