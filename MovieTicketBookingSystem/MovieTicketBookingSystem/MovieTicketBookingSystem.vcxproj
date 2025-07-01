@@ -19,19 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\authScreens.h" />
     <ClInclude Include="..\..\include\admin.h" />
+    <ClInclude Include="..\..\include\authScreens.h" />
     <ClInclude Include="..\..\include\cinema.h" />
     <ClInclude Include="..\..\include\hall.h" />
+    <ClInclude Include="..\..\include\login.h" />
     <ClInclude Include="..\..\include\main.h" />
+    <ClInclude Include="..\..\include\mainMenu.h" />
     <ClInclude Include="..\..\include\movie.h" />
     <ClInclude Include="..\..\include\pch.h" />
     <ClInclude Include="..\..\include\show.h" />
     <ClInclude Include="..\..\include\signUp.h" />
     <ClInclude Include="..\..\include\startingScreen.h" />
     <ClInclude Include="..\..\include\user.h" />
-    <ClInclude Include="..\..\login.h" />
-    <ClInclude Include="..\..\mainMenu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\admin.cpp" />
