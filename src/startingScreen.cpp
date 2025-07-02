@@ -1,4 +1,5 @@
 #include "../include/startingScreen.h"
+#include "../include/authScreens.h" 
 #include "../include/pch.h"
 #include <iostream>
 #include <string>
@@ -12,10 +13,10 @@ void displayStartingScreen()
     const string title[11] = {
     "",
     "   ____ _                            ",
-    "  / (_)_ __   ___ _ __ ___   __ _ ",
+    "  / () __   ___ _ __ ___   __ _ ",
     " | |   | | \\ / _ \\ '_ ` _ \\ / ` |",
-    " | || | | | |  __/ | | | | | (_| |",
-    "  \\|_|_||\\|_| |_||\\__,_|",
+    " | || | | | |  / | | | | | (| |",
+    "  \\||||\\|| |_||\\,_|",
     "",
     "",
     "",
@@ -48,7 +49,7 @@ void displayStartingScreen()
 void chooseAnswer()
 {
     string redColor = "\033[31m";     // Red
-    string resetColor = "\033[37m";   // White 
+    string resetColor = "\033[37m";   // White
 
     int choice;
     bool isValid = false;
@@ -67,11 +68,10 @@ void chooseAnswer()
             clearScreen();
             displaySignUp();
         }
-        else if (choice == 2)
-        {
+        else if (choice == 2) {
             isValid = true;
             clearScreen();
-            displayLogin();
+            showLoginScreen();
         }
         else
         {

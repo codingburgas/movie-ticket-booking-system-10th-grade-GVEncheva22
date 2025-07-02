@@ -73,7 +73,7 @@ void deleteMovie() {
     cout << "Movie deleted successfully!" << endl;
 }
 
-int main() {
+void adminMenu() {
     int choice;
 
     do {
@@ -102,6 +102,4 @@ int main() {
             cout << "Invalid choice! Try again." << endl;
         }
     } while (choice != 4);
-
-    return 0;
 }

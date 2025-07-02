@@ -1,4 +1,4 @@
 #pragma once
 void displaySignUp();
-void displayLogin();
+void showLoginScreen();
 void clearScreen();

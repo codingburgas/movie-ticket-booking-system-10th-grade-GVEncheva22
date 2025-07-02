@@ -35,22 +35,24 @@ void saveUser(const string& username, const string& password)
 void displaySignUp()
 {
     string username, password;
+    bool success = false;
 
-    cout << "Enter new username: ";
-    cin >> username;
+    while (!success) {
+        cout << "Enter new username: ";
+        cin >> username;
 
-    if (userExists(username))
-    {
-        cout << "Username already taken! Please try another." << endl;
-        system("pause");
-        return;
+        if (userExists(username)) {
+            cout << "Username already taken! Please try another." << endl;
+            continue;
+        }
+
+        cout << "Enter new password: ";
+        cin >> password;
+
+        saveUser(username, password);
+        cout << "Registration successful!" << endl;
+        success = true;
     }
 
-    cout << "Enter new password: ";
-    cin >> password;
-
-    saveUser(username, password);
-
-    cout << "Registration successful!" << endl;
     system("pause");
 }

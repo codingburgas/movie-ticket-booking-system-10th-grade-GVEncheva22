@@ -37,3 +37,13 @@ bool Hall::bookSeat(int seatNumber) {
     }
     return false;
 }
+
+void Hall::displayHallInfo() const {
+    cout << "Hall number: " << hallNumber << endl;
+    cout << "Total seats: " << totalSeats << endl;
+    cout << "Seats status: ";
+    for (int i = 0; i < totalSeats; i++) {
+        cout << (seats[i] ? "[X] " : "[O] ");
+    }
+    cout << endl;
+}
